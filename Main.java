@@ -12,35 +12,37 @@ public class Main {
    * Método principal que inicia la ejecución del programa.
    */
   public static void main(String[] args) {
-    Scanner teclado = new Scanner(System.in);
+      System.out.println("Bienvenido a Modelorama");
+      Scanner teclado = new Scanner(System.in);
 
-    // Bucle principal del programa
-    while (true) {
-      mostrarMenu(); // Muestra el menú
-      System.out.print("Seleccione una opción: ");
-      int opcion = teclado.nextInt();
-      teclado.nextLine(); // Consumir la nueva línea después de nextInt()
+      // Bucle principal del programa
+      int opcion;
+      do {
+          mostrarMenu(); // Muestra el menú
+          System.out.print("Seleccione una opción: ");
+          opcion = teclado.nextInt();
+          teclado.nextLine(); // Consumir la nueva línea después de nextInt()
 
-      switch (opcion) {
-        case 1:
-          crearProducto(teclado);
-          break;
-        case 2:
-          leerProductos();
-          break;
-        case 3:
-          actualizarProducto(teclado);
-          break;
-        case 4:
-          eliminarProducto(teclado);
-          break;
-        case 5:
-          salir(teclado);
-          break;
-        default:
-          System.out.println("Opción inválida. Intente nuevamente.");
-      }
-    }
+          switch (opcion) {
+              case 1:
+                  crearProducto(teclado);
+                  break;
+              case 2:
+                  leerProductos();
+                  break;
+              case 3:
+                  actualizarProducto(teclado);
+                  break;
+              case 4:
+                  eliminarProducto(teclado);
+                  break;
+              case 5:
+                  salir(teclado);
+                  break;
+              default:
+                  System.out.println("Opción inválida. Intente nuevamente.");
+          }
+      } while (opcion != 5);
   }
 
   /**
@@ -53,7 +55,7 @@ public class Main {
     System.out.println("2. 👁️‍🗨️ Ver productos 👁️‍🗨️");
     System.out.println("3. ✏️ Editar producto ✏️");
     System.out.println("4. 💣 Borrar producto 💣");
-    System.out.println("5. Salir");
+    System.out.println("5. ☢️ Salir ☢️");
   }
 
   /**
@@ -169,7 +171,7 @@ public class Main {
    * @param scanner Scanner para cerrar antes de salir.
    */
   private static void salir(Scanner scanner) {
-    System.out.println("Saliendo del programa. ¡Hasta luego!");
+    System.out.println("Adios 🗿");
     scanner.close();
     System.exit(0);
   }
