@@ -1,3 +1,15 @@
+
+[![CCD|UTJ](https://i.imgur.com/TkTfnqe.png)](#)
+
+
+# Proyecto final 1er Cuatrimestre TIADSM UTJ CCD
+## Integrantes
+
+### - Brisa Paola Jaimez Aguirre
+### - Johan Garcia Rodriguez
+### - Diego Chavez Garcia
+### - Jose Gomez Camacho (Michi 😼)
+^
 # Inventario Modelorama
 
 Este programa en Java implementa un sistema de gestión de inventario de productos de modelorama mediante un menú interactivo en la consola. Los productos se almacenan en un catálogo con campos separados por `;`.
